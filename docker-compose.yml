@@ -1,0 +1,18 @@
+version: '3'
+services:
+  engine:
+    image: "tdc.dk/engine"
+    ports:
+      - "8080:8080"
+  customer-service:
+    image: "tdc.dk/customer-service"
+    ports:
+      - "9080:8080"
+  holdings-service:
+    image: "tdc.dk/holdings-service"
+    ports:
+      - "9081:8080"
+  advisor-service:
+    image: "tdc.dk/advisor-service"
+    ports:
+      - "9082:8080"
